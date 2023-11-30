@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cv Generator</title>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <nav>
+            <ul class="flex gap-3 mt-3">
+                <li><a class="text-xl underline" href="{% url 'cv_maker' %}">Create New Cv</a></li>
+                <li><a class="text-xl underline" href="{% url 'list' %}">View Cv</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+</body>
+
+</html>

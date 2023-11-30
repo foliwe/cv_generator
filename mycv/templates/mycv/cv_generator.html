@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-3xl font-bold underline">
+    Create a cv
+</h1>
+
+<div class="">
+
+    <form action="" class="max-w-4xl mx-auto" method="POST">
+        {% csrf_token %}
+
+        <div class="mb-5">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Your Name</label>
+            <input type="text" id="name" name="name"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="fullname" required>
+        </div>
+        <div class="mb-5">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
+            <input type="email" id="email" name="email"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                placeholder="name@flowbite.com" required>
+        </div>
+
+        <div class="mb-5">
+            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Phone</label>
+            <input type="text" id="phone" name="phone"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="phone" required>
+        </div>
+
+        <div class="mb-5">
+            <label for="about" class="block mb-2 text-sm font-medium text-gray-900 ">About You</label>
+            <textarea type="text" id="summary" name="summary"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="about you" required> </textarea>
+        </div>
+
+        <div class="mb-5">
+            <label for="degree" class="block mb-2 text-sm font-medium text-gray-900 ">Degree</label>
+            <input type="text" id="degree" name="degree"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="degree" required>
+        </div>
+
+        <div class="mb-5">
+            <label for="school" class="block mb-2 text-sm font-medium text-gray-900 ">School</label>
+            <input type="text" id="school" name="school"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="school" required>
+        </div>
+
+        <div class="mb-5">
+            <label for="university" class="block mb-2 text-sm font-medium text-gray-900 ">University</label>
+            <input type="text" id="university" name="university"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="university" required>
+        </div>
+
+        <div class="mb-5">
+            <label for="work" class="block mb-2 text-sm font-medium text-gray-900 ">Previouse work</label>
+            <textarea type="text" id="work" name="work"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Previouse Work" required> </textarea>
+        </div>
+
+
+        <div class="mb-5">
+            <label for="skills" class="block mb-2 text-sm font-medium text-gray-900 ">Skills</label>
+            <input type="text" id="skills" name="skills"
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="skills" required>
+        </div>
+
+        <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create
+            Cv</button>
+    </form>
+
+</div>
+{% endblock %}

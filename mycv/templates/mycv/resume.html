@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cv Generator</title>
+</head>
+
+<body class="container mx-auto">
+
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl">{{ user_profile.name }}</h2>
+        <p class="my-2">
+            <span class="font-semibold">Email:</span> {{ user_profile.email }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">Phone Number</span> {{ user_profile.phone }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">About me:</span>{{ user_profile.summary }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">My Degree:</span> {{ user_profile.degree }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">My school:</span> {{ user_profile.school }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">My university:</span> {{ user_profile.university }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">Previouse Work:</span> {{ user_profile.previous_work }}
+        </p>
+        <p class="my-2">
+            <span class="font-semibold">My Skills:</span> {{ user_profile.skills }}
+        </p>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+email
+phone
+summary
+degree
+school
+university
+previous_work
+skills -->
